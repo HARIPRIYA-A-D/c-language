@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int r;
+    scanf("%d",&r);
+    int c=areacircle(r);
+    
+}
+int areacircle(int r)
+{
+    float areacircle;
+    areacircle=3.14*r*r;
+    printf("%f",areacircle);
+}
