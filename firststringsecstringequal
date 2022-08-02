@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[]="abcde";
+    char b[]="deabc";
+    if(strlen(a)!=strlen(b))
+    {
+        printf("second string is not the rotation of first string");
+    }
+    else
+    {
+        strcat(a,a);
+        if(strstr(a,b)!="null")
+        {
+            printf("second string is the rotation of first string");
+        }
+        else
+        {
+            printf("second string is not the rotation of first string");
+        }
+    }
+    return 0;
+}
