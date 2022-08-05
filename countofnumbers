@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a[100],i,j,temp,count=0,n;
+    printf("enter the size:");
+    scanf("%d",&n);
+    printf("enter the elements:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(i=0;i<n;i++)
+    {
+        if(a[0]<a[i])
+        {
+            count++;;
+        }
+    }
+    count=count+1;
+    printf("%d",count);
+    return 0;
+}
