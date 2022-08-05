@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int v,w;
+    printf("enter the no of vehicles:");
+    scanf("%d",&v);
+    printf("enter the no of wheels:");
+    scanf("%d",&w);
+    int res=((4*v)-w)/2;
+    if(w>=2 && (w%2==0) && v<w)
+    {
+        printf("%d\n",res);//no of two wheelers//
+        printf("%d",v-res);
+    }
+    else
+    {
+        printf("invalid input");
+    }
+    return 0;
+}
