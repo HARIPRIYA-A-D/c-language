@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int weight;
+    scanf("%d",&weight);
+    if(weight>0 && weight<=2000)
+    {
+        printf("25 minutes");
+    }
+    else if(weight >2000 && weight<=4000)
+    {
+        printf("35 minutes");
+    }
+    else if(weight>4000 && weight<=8000)
+    {
+        printf("45 minutes");
+    }
+    else
+    {
+        printf("invalid");
+    }
+    return 0;
+}
