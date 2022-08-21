@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[100]="silent";
+    char b[100]="listen";
+    int i,j,x,y,temp;
+    x=strlen(a);
+    y=strlen(b);
+    if(x!=y)
+    {
+        printf("it is not an anagram");
+    }
+    for(i=0;i<x-1;i++)
+    {
+        for(j=i+1;j<x;j++)
+        {
+        if(a[i]>a[j])
+        {
+            temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+    }
+    }
+    for(int i=0;i<x;i++){
+        printf("%c",a[i]);
+    }
+    for(i=0;i<y-1;i++)
+    {
+        for(j=i+1;j<y;j++)
+        {
+        if(b[i]>b[j])
+        {
+            temp=b[i];
+            b[i]=b[j];
+            b[j]=temp;
+        }
+        }
+    }
+    printf("\n");
+    for(int i=0;i<x;i++){
+        printf("%c",b[i]);
+    }
+    for(int i=0;i<x;i++){
+    if(a[i]==b[i])
+    {
+       printf("\nit is an anagram");
+       break;
+    }
+    else
+    {
+        printf("\nit is not an anagram");
+        break;
+    }
+    }
+    return 0;   
+        
+    }
